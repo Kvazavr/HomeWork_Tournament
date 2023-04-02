@@ -1,9 +1,9 @@
 package ru.netology;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
 
-public class GameTests {
+public class GameTest {
     @Test
     public void firstPlayerWinTest() {
         Game game = new Game();
@@ -48,7 +48,7 @@ public class GameTests {
 
         Assertions.assertThrows(NotRegisteredException.class,
                 () -> game.round("Gena", "Dima")
-                );
+        );
 
     }
 
